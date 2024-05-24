@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <script>
+    tailwind.config = {
+      darkMode: 'selector',
+      theme: {
+        extend: {
+          fontFamily: {
+            montserrat: ['Montserrat']
+          }
+        }
+      }
+    }
+  </script>
+  
+  <title>Document</title>
+</head>
+<body>
+  <div class="flex items-center justify-center bg-slate-200 min-h-screen">
+    
+    <div class="flex flex-col rounded-xl shadow-xl shadow-slate-500 bg-white space-y-3 justify-center p-6">
+      <h1 class="font-bold font-montserrat text-xl max-w-xs text-wrap text-black text-center mb-3"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </h1>
+      <input type="email" class="border border-slate-400 p-2 rounded-md placeholder:text-sm placeholder:text-left placeholder:font-light focus:outline-none" placeholder="Enter your email">
+      <button class="bg-blue-500 hover:bg-white hover:text-blue-500 hover:border-blue-500 border border-transparent rounded-lg text-white font-bold font-montserrat hover:bg-opacity-70 p-2 duration-150">Sign up</button>
+      <div class="text-center text-sm text-slate-500 font-light">OR:</div>
+      <button class="flex justify-center items-center space-x-2 border border-black rounded-lg font-medium font-montserrat hover:bg-black hover:text-white p-2 duration-150">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png" alt="" class="w-6">
+        <span>Google</span>
+      </button>
+      <button class="flex justify-center items-center space-x-2 border border-black rounded-lg font-medium font-montserrat hover:bg-black hover:text-white p-2 duration-150">
+      <img src="https://www.pngall.com/wp-content/uploads/13/FB-Logo-PNG-Image-File.png" alt="" class="w-6">
+        <span>Facebook</span>
+      </button>
+    </div>
+  </div>
+</body>
+</html>
